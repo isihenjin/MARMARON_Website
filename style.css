@@ -182,41 +182,6 @@ body {
     border-radius: 8px;
 }
 
-/* 🌿 カルーセルの外側コンテナ */
-#processCarousel {
-    position: relative;
-    max-width: 600px; /* カルーセルの最大幅 */
-    margin: 0 auto;
-}
-
-/* 🌿 前後の画像を少し見切れさせる（中央画像を目立たせる） */
-.carousel-inner {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0 10%;
-}
-
-.carousel-item {
-    flex: 0 0 60%;
-    transition: transform 0.5s ease-in-out;
-    text-align: center;
-}
-
-/* 🌿 カルーセルの矢印ボタン（デザイン変更） */
-.carousel-control-prev, .carousel-control-next {
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    filter: invert(1);
-}
 
 /* 🌿 グラデーションボタン */
 .gradient-button {
