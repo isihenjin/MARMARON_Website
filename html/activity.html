@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MARMARON活動日記</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Google Fonts（Noto Sans JP） -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- カスタムCSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container-sm {
+            max-width: 80%;
+        }
+        .img-container {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .row.g-0 > div {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            .row.g-0 {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ヘッダー読み込み -->
+<div id="header-placeholder"></div>
+
+<div class="container-sm mt-4">
+    <!-- 日記カード 2（画像1枚） -->
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-6 img-container">
+                <img src="../images/activity/1114_1.jpg" class="img-fluid" alt="画像3">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">Eプロ説明会</h5>
+                    <p class="card-text">　団体に参加しているメンバーへの説明会を行いました！
+                        メンバーの顔合わせや、どのような経緯でどのように活動していくのかを説明させていただきました！<br>
+                        　また、今後の活動にあたって、組織改革を行った方がいいという意見が上がり、
+                        大人数のメンバーを効率よく動かせる、新しい人員配置が決まりました✨これによって、より円滑にプロジェクトを進めてまいります！
+                    </p>
+                    <p class="text-muted">2024-11-14</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 日記カード 3（画像3枚・カルーセル） -->
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-6 img-container">
+                <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/activity/1118_1.jpg" class="d-block w-100" alt="画像4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/activity/1118_2.jpg" class="d-block w-100" alt="画像5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/activity/1118_3.jpg" class="d-block w-100" alt="画像6">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">土壌調査</h5>
+                    <p class="card-text">　11月18日に、土壌調査と耕転を行ってきました。<br>
+                        　これから寒くなってきますが、美味しい野菜を作れるよう精進したいと思います🌱<br>
+                        皆さんも体調にお気をつけて！
+                    </p>
+                    <p class="text-muted">2024-11-18</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 12/02 -->
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-6 img-container">
+                <div id="carousel1202" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="../images/activity/1202_1.jpg" class="d-block w-100" alt="画像1"></div>
+                        <div class="carousel-item"><img src="../images/activity/1202_2.jpg" class="d-block w-100" alt="画像2"></div>
+                        <div class="carousel-item"><img src="../images/activity/1202_3.jpg" class="d-block w-100" alt="画像3"></div>
+                        <div class="carousel-item"><img src="../images/activity/1202_4.jpg" class="d-block w-100" alt="画像4"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1202" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1202" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">処理区整備</h5>
+                    <p class="card-text">　12月2日に処理区整備を行いました！学生食堂から出た生ゴミを畑にまく作業です！これから植える野菜の栄養源になります！<br>
+                        　環境にやさしい野菜が出来るようがんばります！
+                        </p>
+                    <p class="text-muted">2024-12-02</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 12/05 -->
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-6 img-container">
+                <div id="carousel1205" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="../images/activity/1205_1.jpg" class="d-block w-100" alt="画像1"></div>
+                        <div class="carousel-item"><img src="../images/activity/1205_2.jpg" class="d-block w-100" alt="画像2"></div>
+                        <div class="carousel-item"><img src="../images/activity/1205_3.jpg" class="d-block w-100" alt="画像3"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1205" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1205" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">クリーンアップ大作戦</h5>
+                    <p class="card-text">　クリーンアップ大作戦に参加し、堆肥の元になる落ち葉を拾いました🍂<br>
+                        　大学周辺も綺麗になるし、美味しい野菜の元にもなるので一石二鳥です🌱
+                        定期的に開催しておりますので、よかったらご参加ください！<br><br>
+                        
+                        今年も皆様にとって暖かい一年となりますように、ささやかながら願っています！<br>
+                        2025年もMARMARONをよろしくお願いします☺️
+                        </p>
+                    <p class="text-muted">2024-12-05</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 12/07 -->
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-6 img-container">
+                <div id="carousel1207" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="../images/activity/1207_1.jpg" class="d-block w-100" alt="画像1"></div>
+                        <div class="carousel-item"><img src="../images/activity/1207_2.jpg" class="d-block w-100" alt="画像2"></div>
+                        <div class="carousel-item"><img src="../images/activity/1207_3.jpg" class="d-block w-100" alt="画像3"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1207" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1207" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">生物性の指標性実験</h5>
+                    <p class="card-text">　12月7、8日に生物性の指標性実験を行いました。<br>
+                        　2日間で指示薬から作成し、土壌の生物性の指標を確認することが出来ました。次回は2月の中旬に同じ方法の実験を行うことで比較をします。<br>
+                        　今後もメンバー全員で頑張っていこうと思います！！
+                        </p>
+                    <p class="text-muted">2024-12-07</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 12/09 -->
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-6 img-container">
+                <div id="carousel1209" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="../images/activity/1209_1.jpg" class="d-block w-100" alt="画像1"></div>
+                        <div class="carousel-item"><img src="../images/activity/1209_2.jpg" class="d-block w-100" alt="画像2"></div>
+                        <div class="carousel-item"><img src="../images/activity/1209_3.jpg" class="d-block w-100" alt="画像3"></div>
+                        <div class="carousel-item"><img src="../images/activity/1209_4.jpg" class="d-block w-100" alt="画像4"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1209" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1209" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">畝立て</h5>
+                    <p class="card-text">　畝立てを行いました。<br>
+                        　春日井市の名城大学附属農場の土壌を耕し、実験で使用する畝の高さと幅を測定したものを作成しました。
+                        その後、ネットと支柱を設置して、次回は植え替えになります。<br>
+                        　今後もメンバー全員で頑張っていこうと思います！！
+                        </p>
+                    <p class="text-muted">2024-12-09</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 12/14 -->
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-6 img-container">
+                <div id="carousel1214" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="../images/activity/1214_1.jpg" class="d-block w-100" alt="画像1"></div>
+                        <div class="carousel-item"><img src="../images/activity/1214_2.jpg" class="d-block w-100" alt="画像2"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1214" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1214" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">進捗会議</h5>
+                    <p class="card-text">　代表、副代表で進捗会議をしました。<br><
+                        　組織改革の後、それぞれの仕事がどれだけ進んでいるのかを確認し、これからの予定も立てました。<br>
+                        　これからも順調に活動を進めて参ります！
+                        </p>
+                    <p class="text-muted">2024-12-14</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 12/19 -->
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-6 img-container">
+                <div id="carousel1219" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="../images/activity/1219_1.jpg" class="d-block w-100" alt="画像1"></div>
+                        <div class="carousel-item"><img src="../images/activity/1219_2.jpg" class="d-block w-100" alt="画像2"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1219" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1219" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">クリーンアップ大作戦</h5>
+                    <p class="card-text">　愛知大学と合同でクリーンアップ大作戦を行いました。<br>
+                        ぴかぴか目指して、頑張りました！🌟<br>
+                        　2/20と、3/14にも合同で天白川クリーンアップ大作戦を行うので、是非ご参加ください！
+                        </p>
+                    <p class="text-muted">2024-12-19</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 12/23 -->
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-6 img-container">
+                <div id="carousel1223" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="../images/activity/1223_1.jpg" class="d-block w-100" alt="画像1"></div>
+                        <div class="carousel-item"><img src="../images/activity/1223_2.jpg" class="d-block w-100" alt="画像2"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1223" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1223" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">モチナの定植</h5>
+                    <p class="card-text">　春日井市の名城大学附属農場にてモチナを定植しました！<br>
+                        健やかに成長しますように！
+                        </p>
+                    <p class="text-muted">2024-12-23</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 12/26 -->
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-6 img-container">
+                <div id="carousel1226" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="../images/activity/1226_1.jpg" class="d-block w-100" alt="画像1"></div>
+                        <div class="carousel-item"><img src="../images/activity/1226_2.jpg" class="d-block w-100" alt="画像2"></div>
+                        <div class="carousel-item"><img src="../images/activity/1226_3.jpg" class="d-block w-100" alt="画像3"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1226" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1226" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">水やりと観察</h5>
+                    <p class="card-text">　定植後、始めてモチナの様子を見に行ってきました。水やりと観察をしました。<br>
+                        　特に異常も見られず、無事、順調に育っていました！<br>
+                        　年末年始は農場が開かないので、水やりができません😢雨が降ってくれることを願うのみです<br>
+                        今後も丁寧にモチナのお世話をしていきます！
+                        </p>
+                    <p class="text-muted">2024-12-26</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- フッター読み込み -->
+<div id="footer-placeholder"></div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- カスタムJavaScript（ヘッダー＆フッター読み込み） -->
+<script src="script.js"></script>
+</body>
+</html>
