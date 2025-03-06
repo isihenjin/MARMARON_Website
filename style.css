@@ -212,3 +212,49 @@ body {
     opacity: 0.8;
     transform: scale(1.05); /* ほんの少し拡大 */
 }
+
+
+/* 🌿 活動日記ページ専用のヒーローセクション */
+.activity-hero {
+    position: relative;
+    width: 100%;
+    height: 300px; /* 背景の高さ */
+    background: url('images/activity/hero_back.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* 🌿 見出しと説明のデザイン */
+.activity-hero-content {
+    background: rgba(0, 0, 0, 0.6); /* 背景を少し暗くして見やすく */
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.activity-hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.activity-hero-content p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* 🌿 スマホ対応 */
+@media (max-width: 768px) {
+    .activity-hero {
+        height: 250px;
+    }
+    .activity-hero-content h1 {
+        font-size: 2rem;
+    }
+    .activity-hero-content p {
+        font-size: 1rem;
+    }
+}

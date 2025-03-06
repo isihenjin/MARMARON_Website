@@ -16,12 +16,10 @@
             <div class="nav-links">
                 <a href="html/activity.html">Activity</a>
                 <a href="html/compost.html">Compost</a>
-                <a href="html/members.html">Members</a>
+                <a href="#members" class="nav-link">Members</a> 
             </div>
         </div>
     </header>
-
-
 
 <!-- 🔹 メインビジュアル -->
 <section class="hero-section">
@@ -31,14 +29,13 @@
     </div>
 </section>
 
-
 <!-- 🔹 説明セクション -->
 <section class="about-section">
     <div class="container d-flex justify-content-center align-items-center">
         <img src="images/index/MARMARON_logo.png" alt="MARMARON ロゴ" class="logo">
         <div class="about-text">
             <h2>私たちMARMARONは、食品ロス解決に<br>向けて生ゴミを肥料に変える活動をしています。</h2>
-            <p>SDG’sの12個目の目標「つくる責任、使う責任」の達成に貢献するために、私たちがやっている活動をご紹介します。</p>
+            <p>SDG’sの12個目の目標「つくる責任、使う責任」の達成に貢献するために、私たちが行っている活動をご紹介します。</p>
         </div>
     </div>
 </section>
@@ -68,7 +65,6 @@
                     <p>ステップ4: 結果を記録</p>
                 </div>
             </div>
-            <!-- カルーセルの回転ボタン（左右に矢印付きボタン） -->
             <button class="carousel-control-prev" type="button" data-bs-target="#processCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
@@ -79,12 +75,23 @@
     </div>
 </section>
 
-<a href="html/compost.html" class="gradient-button">
-    肥料について
-    <span class="arrow">›</span>
-</a>
+<!-- 🔹堆肥のつくりかたボタン -->
+<div class="text-center mt-4">
+    <a href="html/compost.html" class="gradient-button">
+        堆肥のつくりかた
+        <span class="arrow">›</span>
+    </a>
+</div>
 
+<!-- 🔹 MARMARONメンバー -->
+<section id="members" class="process-section text-center">
+    <div class="container">
+        <h2>MARMARONメンバー</h2>
+        <p>私たちの活動を支えるメンバーをご紹介します！</p>
+    </div>
+</section>
 
+<!-- Bootstrap & カスタムJS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 
@@ -95,7 +102,7 @@
         <nav class="footer-nav">
             <a href="html/activity.html">Activity</a>
             <a href="html/compost.html">Compost</a>
-            <a href="html/members.html">Members</a>
+            <a href="#members" class="nav-link">Members</a>
         </nav>
         <p>お問い合わせ: <a href="https://mail.google.com/">marmaron268@gmail.com</a></p>
         <div class="social-icons">
